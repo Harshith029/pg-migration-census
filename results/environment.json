@@ -1,0 +1,177 @@
+{
+ "python": "3.13.16",
+ "pglast": "v8.5",
+ "postgres_grammar": "18.6",
+ "manifest": [
+  {
+   "project": "mattermost/mattermost",
+   "repo_url": "https://github.com/mattermost/mattermost.git",
+   "commit": "47eebd5530c0485391efa77915965b4b7317f16c",
+   "commit_date": "2026-10-09",
+   "migrations_dir": "server/channels/db/migrations/postgres",
+   "glob": "*.up.sql",
+   "kind": "plain",
+   "layout": "numbered NNNNNN_name.up.sql files"
+  },
+  {
+   "project": "calcom/cal.com",
+   "repo_url": "https://github.com/calcom/cal.com.git",
+   "commit": "54343aa685ae8f33159d2f485ec4a57bad5c574a",
+   "commit_date": "2026-09-20",
+   "migrations_dir": "packages/prisma/migrations",
+   "glob": "*/migration.sql",
+   "kind": "plain",
+   "layout": "one directory per migration (migration.sql)"
+  },
+  {
+   "project": "supabase/postgres",
+   "repo_url": "https://github.com/supabase/postgres.git",
+   "commit": "142c6a2c6cb589e66ae9647e868fa428d20fbda5",
+   "commit_date": "2026-10-08",
+   "migrations_dir": "migrations/db/migrations",
+   "glob": "*.sql",
+   "kind": "plain",
+   "layout": "timestamped .sql files"
+  },
+  {
+   "project": "supabase/auth",
+   "repo_url": "https://github.com/supabase/auth.git",
+   "commit": "ce9a8eee0cc042be8c7a42981a7ddae631e41d91",
+   "commit_date": "2026-09-22",
+   "migrations_dir": "migrations",
+   "glob": "*.sql",
+   "kind": "plain",
+   "layout": "timestamped .up.sql files, mostly Go templates"
+  },
+  {
+   "project": "supabase/storage",
+   "repo_url": "https://github.com/supabase/storage.git",
+   "commit": "f31599e188d7c9c854b1daa76a11b41c6d179462",
+   "commit_date": "2026-10-09",
+   "migrations_dir": "migrations",
+   "glob": "**/*.sql",
+   "kind": "plain",
+   "layout": "numbered .sql files in tenant/ and multitenant/"
+  },
+  {
+   "project": "hasura/graphql-engine",
+   "repo_url": "https://github.com/hasura/graphql-engine.git",
+   "commit": "e77418e3f6e862b965d5471c69ba5bc1c4e608cd",
+   "commit_date": "2026-10-10",
+   "migrations_dir": "server/src-rsr/migrations",
+   "glob": "*.sql",
+   "kind": "plain",
+   "layout": "catalog upgrade scripts (N_to_M.sql)"
+  },
+  {
+   "project": "windmill-labs/windmill",
+   "repo_url": "https://github.com/windmill-labs/windmill.git",
+   "commit": "ed7a859e8c4799bed086baf707b817a68f93d2a4",
+   "commit_date": "2026-10-10",
+   "migrations_dir": "backend/migrations",
+   "glob": "*.up.sql",
+   "kind": "plain",
+   "layout": "timestamped .up.sql files (some rewritten at startup)"
+  },
+  {
+   "project": "LemmyNet/lemmy",
+   "repo_url": "https://github.com/LemmyNet/lemmy.git",
+   "commit": "040171d37aac6d8cce6b55e82a3641e16fcaf744",
+   "commit_date": "2026-10-09",
+   "migrations_dir": "migrations",
+   "glob": "*/up.sql",
+   "kind": "plain",
+   "layout": "one directory per migration (up.sql)"
+  },
+  {
+   "project": "documenso/documenso",
+   "repo_url": "https://github.com/documenso/documenso.git",
+   "commit": "38ecb217effcc53a7164d7123c51336f636bd3b2",
+   "commit_date": "2026-10-08",
+   "migrations_dir": "packages/prisma/migrations",
+   "glob": "*/migration.sql",
+   "kind": "plain",
+   "layout": "one directory per migration (migration.sql)"
+  },
+  {
+   "project": "formbricks/formbricks",
+   "repo_url": "https://github.com/formbricks/formbricks.git",
+   "commit": "2c5c3b104bfccabc44c2460e2488eac14d8910c9",
+   "commit_date": "2026-10-09",
+   "migrations_dir": "packages/database/migration",
+   "glob": "*/migration.sql",
+   "kind": "plain",
+   "layout": "one directory per migration (migration.sql)"
+  },
+  {
+   "project": "triggerdotdev/trigger.dev",
+   "repo_url": "https://github.com/triggerdotdev/trigger.dev.git",
+   "commit": "93465d8549a735074d1ce7696bae3faebe577e8d",
+   "commit_date": "2026-10-10",
+   "migrations_dir": "internal-packages/database/prisma/migrations",
+   "glob": "*/migration.sql",
+   "kind": "plain",
+   "layout": "one directory per migration (migration.sql)"
+  },
+  {
+   "project": "langfuse/langfuse",
+   "repo_url": "https://github.com/langfuse/langfuse.git",
+   "commit": "35d16971a3f83256d33f846b85dbff8c2d5c4d77",
+   "commit_date": "2026-10-10",
+   "migrations_dir": "packages/shared/prisma/migrations",
+   "glob": "*/migration.sql",
+   "kind": "plain",
+   "layout": "one directory per migration (migration.sql)"
+  },
+  {
+   "project": "hatchet-dev/hatchet",
+   "repo_url": "https://github.com/hatchet-dev/hatchet.git",
+   "commit": "82fce9703e358c5158c2998c92e91880d45d2fd1",
+   "commit_date": "2026-10-10",
+   "migrations_dir": "cmd/hatchet-migrate/migrate/migrations",
+   "glob": "*.sql",
+   "kind": "goose",
+   "layout": "goose files (Up section only)"
+  },
+  {
+   "project": "riverqueue/river",
+   "repo_url": "https://github.com/riverqueue/river.git",
+   "commit": "2f6b27e69c8e747b6c8b2809fab35c69f401d948",
+   "commit_date": "2026-10-10",
+   "migrations_dir": "riverdriver/riverpgxv5/migration/main",
+   "glob": "*.up.sql",
+   "kind": "plain",
+   "layout": "numbered .up.sql files"
+  },
+  {
+   "project": "temporalio/temporal",
+   "repo_url": "https://github.com/temporalio/temporal.git",
+   "commit": "f6279f9c03f2c7ebb15560483e02958d6eb9d6c8",
+   "commit_date": "2026-10-09",
+   "migrations_dir": "schema/postgresql/v12/temporal/versioned",
+   "glob": "*/*.sql",
+   "kind": "plain",
+   "layout": "one directory per schema version (vX.Y/*.sql)"
+  },
+  {
+   "project": "openfga/openfga",
+   "repo_url": "https://github.com/openfga/openfga.git",
+   "commit": "526995eb202464e2cace266fb5be56c212af9ecf",
+   "commit_date": "2026-10-07",
+   "migrations_dir": "assets/migrations/postgres",
+   "glob": "*.sql",
+   "kind": "goose",
+   "layout": "goose files (Up section only)"
+  },
+  {
+   "project": "ory/kratos",
+   "repo_url": "https://github.com/ory/kratos.git",
+   "commit": "b86338da04a040247a07f46100a86dcfb3875909",
+   "commit_date": "2026-07-29",
+   "migrations_dir": "persistence/sql/migrations/sql",
+   "glob": "*.postgres.up.sql",
+   "kind": "plain",
+   "layout": "*.postgres.up.sql files"
+  }
+ ]
+}
